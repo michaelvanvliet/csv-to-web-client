@@ -1,0 +1,20 @@
+apply plugin: 'groovy'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	groovy group: 'org.codehaus.groovy', name: 'groovy', version: '1.8.6'
+	groovy group: 'org.codehaus.groovy.modules.http-builder', name: 'http-builder', version:'0.5.2'
+}
+
+jar {
+	manifest {
+		attributes("Main-Class": "org.scdb.client.SCDBConnect")
+	}
+}
+
+jar {
+	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
