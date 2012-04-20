@@ -52,4 +52,8 @@ class SCDBConnect {
 		return httpPost('search', ['label':label, 'value':value, 'regex': regex ? 1 : 0])
 	}
 	
+	def searchBetween(String label, String valueA, String valueB){
+		return httpPost('searchbetween', ['label':label, 'valueA':valueA, 'valueB':valueB] )
+	}
+	
 }

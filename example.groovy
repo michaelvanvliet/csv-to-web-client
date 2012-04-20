@@ -48,3 +48,9 @@ search = client.search('Elements','C4H5O6', false)
 println search['count'] + ' result(s) found'
 println search['results']
 println ""
+
+println "# Search compound where Cid >= 2 and Cid <= 4 (2,3,4)"
+search = client.searchBetween('Cid','2', '4')
+println search['count'] + ' result(s) found'
+println search['results']
+println ""
