@@ -1,0 +1,7 @@
+.gradle
+build/tmp
+com.springsource.sts.gradle.core.prefs
+com.springsource.sts.gradle.refresh.prefs
+bin
+build/classes
+build/reports/tests
