@@ -11,7 +11,7 @@ dependencies {
 
 jar {
 	manifest {
-		attributes("Main-Class": "org.scdb.client.SCDBConnect")
+		attributes("Main-Class": "org.csv2web.client.Csv2WebConnect")
 	}
 }
 
